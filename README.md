@@ -26,7 +26,7 @@ ZAPI_TOKEN=<token-da-instancia-zapi>
 
 Instalação
 Clone o repositório:
-git clone https://github.com/seu-usuario/supabase-zapi-python.git
+https://github.com/Cleverson10C/python-supabase-zapi.git
 cd supabase-zapi-python
 
 Crie e ative o ambiente virtual:
