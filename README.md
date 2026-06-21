@@ -1,10 +1,13 @@
-# Supabase + Z-API Python 
+# Supabase + Z-API Python
 
-Projeto desenvolvido como parte do desafio de estágio em Desenvolvimento Python.  
-O objetivo é integrar **Supabase** (banco de dados) com **Z-API** (WhatsApp) para enviar mensagens personalizadas.
+Projeto desenvolvido como parte do desafio de estágio em Desenvolvimento Python.
+O objetivo é integrar **Supabase** (banco de dados) com **Z-API** (WhatsApp) para envio de mensagens personalizadas.
+
+---
 
 ## Setup da Tabela no Supabase
-Crie a tabela `contatos` no Supabase usando o SQL abaixo:
+
+Crie a tabela `contatos` no Supabase utilizando o seguinte SQL:
 
 ```sql
 create table contatos (
@@ -15,27 +18,58 @@ create table contatos (
 
 insert into contatos (nome_contato, telefone)
 values 
-('Cleverson', '5541992356589'),
-('Lucimara', '5541992089191');
+('José', '5541991356580'),
+('Maria', '5541991089192');
+```
 
-Crie um arquivo .env na raiz do projeto com
+---
+
+## Configuração de Ambiente
+
+Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+
+```
 SUPABASE_URL=https://<seu-projeto>.supabase.co
 SUPABASE_KEY=<sua-chave-publica>
 ZAPI_ID=<id-da-instancia-zapi>
 ZAPI_TOKEN=<token-da-instancia-zapi>
+```
 
-Instalação
+---
+
+## Instalação
+
 Clone o repositório:
+
+```
 https://github.com/Cleverson10C/python-supabase-zapi.git
 cd supabase-zapi-python
+```
 
 Crie e ative o ambiente virtual:
+
+```
 python -m venv venv
-venv\Scripts\activate      # Windows
-source venv/bin/activate   # Linux/Mac
+
+# Windows
+venv\Scripts\activate
+
+# Linux/Mac
+source venv/bin/activate
+```
 
 Instale as dependências:
+
+```
 pip install -r requirements.txt
+```
+
+---
+
+## Execução
 
 Para rodar o projeto:
+
+```
 python main.py
+```
